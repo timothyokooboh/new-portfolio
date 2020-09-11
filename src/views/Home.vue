@@ -83,21 +83,21 @@
         <div class="services__cards">
           <div class="services__cards--spa"> 
             <div class="services__cards--content">    
-              <div> <img src="/spa.png"> </div>
+              <div> <img src="spa.png"> </div>
               <h2> SPAs </h2>
               <div class="services__cards--info" > I create single page apps that are performant and scalable </div>
             </div>
           </div>
           <div class="services__cards--pwa"> 
             <div class="services__cards--content" >
-              <div> <img src="/pwa.png"> </div>
+              <div> <img src="pwa.png"> </div>
               <h2> PWAs </h2>
               <div class="services__cards--info" > I create progressive web apps that are performant and scalable </div>
             </div>
           </div>
           <div class="services__cards--univ">
             <div class="services__cards--content">
-              <div> <img src="/univ.png"> </div>
+              <div> <img src="univ.png"> </div>
               <h2> universal Apps </h2>
               <div class="services__cards--info"  > I create universal web apps with Nuxt.js </div>
             </div>
