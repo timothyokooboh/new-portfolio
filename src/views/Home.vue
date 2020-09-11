@@ -46,7 +46,7 @@
           </div>
 
           <div>
-            <img src="/timothy.png">
+            <img src="timothy.png">
           </div>
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319"><path fill="#fff" fill-opacity="1" d="M0,32L26.7,58.7C53.3,85,107,139,160,154.7C213.3,171,267,149,320,128C373.3,107,427,85,480,74.7C533.3,64,587,64,640,85.3C693.3,107,747,149,800,149.3C853.3,149,907,107,960,117.3C1013.3,128,1067,192,1120,192C1173.3,192,1227,128,1280,122.7C1333.3,117,1387,171,1413,197.3L1440,224L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path></svg>
@@ -56,7 +56,7 @@
     <section class="about" id="about">
         <div class="about__details">
           <div>
-            <img src="/timothy.png">
+            <img src="timothy.png">
           </div>
           <div class="about__details--info">
             <h2> I am Timothy Okooboh </h2>
@@ -65,7 +65,7 @@
             <div class="about__details--subtext"> The sole aim of the softwares I create is to provide solutions to everyday problems. </div>
             <div class="about__details--subtext"> PS: I'm also a Pharmacist. </div>
             <div class="about__details--action"> 
-              <div> <a href="/resume_tim.pdf" download > Download CV </a> </div> 
+              <div> <a href="resume_tim.pdf" download > Download CV </a> </div> 
               <div> <a href="#contact"> Hire Me </a> </div>
             </div>
           </div>
@@ -149,7 +149,7 @@
       <div class="portfolio__cards">
         <div class="portfolio__content" >
           <div class="portfolio__content--details">
-            <img src="/food.png">
+            <img src="food.png">
             <h3> 950 meals</h3>
             <div>
               950meals is a food delivery service. Users pre-order breakfast and lunch meals which are then prepared by chefs and delivered by a logistics company.
@@ -157,7 +157,7 @@
             <div class="portfolio__actions">
               <div>
                 <a href="https://950meals.com" target="_blank" > 
-                  <img src="/web.png">
+                  <img src="web.png">
                 </a>
               </div>
             </div>
@@ -174,12 +174,12 @@
             <div class="portfolio__actions">
               <div>
                 <a href="https://buyhub.herokuapp.com" target="_blank" > 
-                  <img src="/web.png">
+                  <img src="web.png">
                 </a>
               </div>
               <div>
                 <a href="https://github.com/timothyokooboh/E-commerce" target="_blank" > 
-                  <img src="/github.png" style="height:20px">
+                  <img src="github.png" style="height:20px">
                 </a>
               </div>
             </div>
@@ -196,12 +196,12 @@
             <div class="portfolio__actions">
               <div>
                 <a href="https://timothyokooboh.github.io" target="_blank" > 
-                  <img src="/web.png">
+                  <img src="web.png">
                 </a>
               </div>
               <div>
                 <a href="https://github.com/timothyokooboh/covid19-dev" target="_blank" > 
-                  <img src="/github.png" style="height:20px">
+                  <img src="github.png" style="height:20px">
                 </a>
               </div>
             </div>
@@ -218,12 +218,12 @@
             <div class="portfolio__actions">
               <div>
                 <a href="https://timothyokooboh.github.io/dictionary" target="_blank" > 
-                  <img src="/web.png">
+                  <img src="web.png">
                 </a>
               </div>
               <div>
                 <a href="https://github.com/timothyokooboh/dictionary-dev-2" target="_blank" > 
-                  <img src="/github.png" style="height:20px">
+                  <img src="github.png" style="height:20px">
                 </a>
               </div>
             </div>
@@ -241,12 +241,12 @@
         <div class="contact__avenues">
           <div>
             <a href="tel:+2348176581327" target="_blank" > 
-              <img src="/phone.png" class="icon" >
+              <img src="phone.png" class="icon" >
             </a>
           </div>
           <div>
             <a href="mailto: okoobohtimothy@gmail.com" target="_blank"> 
-              <img src="/email.png" class="icon" >
+              <img src="email.png" class="icon" >
             </a>
           </div>
         </div>
@@ -254,12 +254,12 @@
         <div class="contact__avenues">
           <div>
             <a href="https://www.linkedin.com/in/timothy-okooboh-193980165/" target="_blank" > 
-              <img src="/linkedin.png" class="icon" >
+              <img src="linkedin.png" class="icon" >
             </a>
           </div>
           <div>
             <a href="https://twitter.com/inspiretim24" target="_blank"> 
-              <img src="/twitter.png" style="width:24px" class="icon" >
+              <img src="twitter.png" style="width:24px" class="icon" >
             </a>
           </div>
         </div>
