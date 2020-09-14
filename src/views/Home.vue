@@ -147,6 +147,7 @@
       <h2 class="portfolio__heading"> My latest <span style="color: #2806D2;" > projects </span> </h2>
 
       <div class="portfolio__cards">
+
         <div class="portfolio__content" >
           <div class="portfolio__content--details">
             <img src="food.png">
@@ -157,6 +158,23 @@
             <div class="portfolio__actions">
               <div>
                 <a href="https://950meals.com" target="_blank" > 
+                  <img src="web.png">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio__content" >
+          <div class="portfolio__content--details">
+            <img src="pep.png">
+            <h3> PEP Exams </h3>
+            <div>
+              A progressive web app used by Pharmacists preparing for the licensing examination in Nigeria. It contains past questions, answers and downloadable study resources
+            </div>
+            <div class="portfolio__actions">
+              <div>
+                <a href="https://pepexam.herokuapp.com" target="_blank" > 
                   <img src="web.png">
                 </a>
               </div>
@@ -597,7 +615,7 @@
 
       & > div {
         width: 20rem;
-        min-height: 20rem;
+        min-height: 25rem;
         @include boxShadow;
         background: $color-white;
         border-radius: 4px;
