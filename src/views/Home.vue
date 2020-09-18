@@ -852,6 +852,7 @@
   @media all and (max-width: 828px) {
    .hamburger label {
      display: flex;
+     outline: none;
    }
 
    .header__nav--list {
