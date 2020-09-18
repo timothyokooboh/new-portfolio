@@ -5,7 +5,9 @@
       <div class="header">
         <div class="hamburger">
           <input type="checkbox" id="check">
-          <label for="check" class="hamburger__menu" > </label>
+          <label for="check" > 
+            <span class="hamburger__menu" ></span>
+          </label>
           <ul class="hamburger__menu--nav-items">
             <li>  <a href="#home" > home </a> </li>
             <li>  <a href="#about"> about me </a> </li>
@@ -693,32 +695,36 @@
   }
 
   .hamburger {
-    position: fixed;
-    top: 30px;
-    right: 30px;
-    z-index: 1000;
-    background-color: $color-white;
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    justify-content: center;
-    align-items: center;
-    @include boxShadow;
-    display: none;
+
+    label {
+      position: fixed;
+      top: 30px;
+      right: 30px;
+      z-index: 1000;
+      background-color: $color-white;
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      @include boxShadow;
+      display: none;
+    }
 
     input[type="checkbox"] {
       display: none
     }
 
-    input[type="checkbox"]:checked + &__menu::before {
+    input[type="checkbox"]:checked + label &__menu::before {
       transform: rotate(45deg);
     }
 
-    input[type="checkbox"]:checked + &__menu::after {
+    input[type="checkbox"]:checked + label &__menu::after {
       transform: rotate(-45deg);
     }
 
-    input[type="checkbox"]:checked ~ &__menu {
+    input[type="checkbox"]:checked + label &__menu {
       background-color: transparent;
     }
 
@@ -731,7 +737,7 @@
       width: 30px;
       height: 3px;
       background-color: $color-grey;
-      display: inline;
+      display: inline-block;
       position: relative;
       cursor: pointer;
       transition: all .4s;
@@ -813,6 +819,7 @@
     }
   }
 
+  
   @media all and (max-width: 1154px) {
     .services__details {
       display: grid;
@@ -843,7 +850,7 @@
   }
 
   @media all and (max-width: 828px) {
-   .hamburger {
+   .hamburger label {
      display: flex;
    }
 
