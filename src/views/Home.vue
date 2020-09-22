@@ -3,12 +3,12 @@
   
     <header>
       <div class="header">
-        <div class="hamburger">
+        <div class="hamburger" @click="open">
           <input type="checkbox" id="check">
           <label for="check" > 
             <span class="hamburger__menu" ></span>
           </label>
-          <ul class="hamburger__menu--nav-items">
+          <ul class="hamburger__menu--nav-items" id="x" @click="close">
             <li>  <a href="#home" > home </a> </li>
             <li>  <a href="#about"> about me </a> </li>
             <li>  <a href="#services"> services </a> </li>
@@ -76,13 +76,13 @@
 
     <section class="services" id="services" >
       <div class="services__details">
-        <div class="services__details--info">
+        <div class="services__details--info" id="services__text">
           <h2> my awesome <span style="color: #2806D2;" > services </span> </h2>
           <div class="services__details--subinfo">
             I work either on the frontend or backend to create single page applications (SPAs), progressive web apps (PWAs), and universal applications.
           </div>
         </div>
-        <div class="services__cards">
+        <div class="services__cards" id="services__cards">
           <div class="services__cards--spa"> 
             <div class="services__cards--content">    
               <div> <img src="spa.png"> </div>
@@ -292,6 +292,46 @@
   </div>
 </template>
 
+<script>
+  export default {
+   
+    mounted() {
+      const about = document.querySelector("#about")
+      let observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if(entry.isIntersecting) {
+            entry.target.style.animation = "slideIn 2s ease-out forwards"
+          }
+        })
+      })
+
+      observer.observe(about)
+
+      const servicesText = document.querySelector("#services__text")
+      let observeServices = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if(entry.isIntersecting) {
+            entry.target.style.animation = "moveFromRight 2s ease-out forwards"
+          }
+        })
+      })
+
+      observeServices.observe(servicesText);
+
+      const servicesCards = document.querySelector("#services__cards")
+      let observeServicesCards = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if(entry.isIntersecting) {
+            entry.target.style.animation = "moveFromBottom 2s ease-out forwards"
+          }
+        })
+      })
+
+      observeServicesCards.observe(servicesCards)
+      
+    }
+  }
+</script>
 
 <style lang="scss">
 
@@ -301,6 +341,28 @@
   $color-grey: #777;
   $color-black: #000;
   $color-primary: #2806D2;
+
+  @keyframes moveFromRight {
+    from {
+      transform: translateX(100px);
+      opacity: 0
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes moveFromBottom {
+    from {
+      transform: translateY(100px);
+      opacity: 0
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
 
   @mixin boxShadow {
     box-shadow: 0 1rem 1.5rem rgba($color-black, .15);
@@ -622,10 +684,12 @@
         background: $color-white;
         border-radius: 4px;
         margin: 2rem;
+        outline-offset: 10px;
         transition: all .2s;
 
         &:hover {
           transform: translateY(-10px);
+          outline: 5px solid $color-primary;
         }
       }
     }
@@ -749,7 +813,7 @@
         width: 100%;
         height: 100%;
         background-color: $color-grey;
-        transform: translateY(-6px);
+        transform: translateY(-8px);
         cursor: pointer;
         transition: all .4s;
       }
@@ -761,7 +825,7 @@
         width: 100%;
         height: 100%;
         background-color: $color-grey;
-        transform: translateY(6px);
+        transform: translateY(8px);
         cursor: pointer;
         transition: all .4s;
       }
