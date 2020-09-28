@@ -67,7 +67,7 @@
             <div class="about__details--subtext"> The sole aim of the softwares I create is to provide solutions to everyday problems. </div>
             <div class="about__details--subtext"> PS: I'm also a Pharmacist. </div>
             <div class="about__details--action"> 
-              <div> <a href="resume_tim.pdf" download > Download CV </a> </div> 
+              <div> <a href="cv.pdf" download > Download CV </a> </div> 
               <div> <a href="#contact"> Hire Me </a> </div>
             </div>
           </div>
