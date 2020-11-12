@@ -1,6 +1,8 @@
 <template>
   <div>
-  
+    <div class="back-to-top" title="Back To Top">
+     <a href="#home"> &#x2191; </a>
+    </div>
     <header>
       <div class="header">
         <div class="hamburger" @click="open">
@@ -1014,6 +1016,25 @@
   to {
     transform: translateX(0);
     opacity: 1;
+  }
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  font-weight: bold;
+  font-size: 2rem;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, .2);
+  padding: .5rem 1rem;
+  z-index: 50000000;
+  background-color: #fff;
+
+  a {
+    text-decoration: none;
+    color: #3A3AD6;
   }
 }
 </style>

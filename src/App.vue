@@ -26,6 +26,10 @@ import Loader from "@/components/Loader.vue"
 </script>
 
 <style lang="scss">
+  html {
+    scroll-behavior: smooth;
+  }
+
   #app {
     font-family: Arial, Helvetica, sans-serif;
   }
