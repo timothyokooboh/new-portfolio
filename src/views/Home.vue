@@ -64,7 +64,7 @@
           </div>
           <div class="about__details--info">
             <h2> I am Timothy Okooboh </h2>
-            <div class="about__details--stack"> A Fullstack Software Developer with a keen interest in web app optimization and Vue.js development. </div>
+            <div class="about__details--stack"> A Frontend Software Developer (Web & Mobile) with a keen interest in web app optimization and Vue.js development. </div>
             <div class="about__details--subtext"> I specialize on the research and development of reusable and performant UI components while adhering to best practices. </div>
             <div class="about__details--subtext"> The sole aim of the softwares I create is to provide solutions to everyday problems. </div>
             <div class="about__details--subtext"> PS: I'm also a Pharmacist. </div>
@@ -118,13 +118,12 @@
           <h4 class="skills__category--header">frontend</h4>
           <div>
             <div class="skills__item"> Vue.js </div>
-            <div class="skills__item"> Nuxt.js </div>
-            <div class="skills__item"> Javascript </div>
-            <div class="skills__item"> Typescript </div>
+            <div class="skills__item"> Vuetify </div>
+            <div class="skills__item"> NativescriptVue </div>
             <div class="skills__item"> SCSS </div>
-            <div class="skills__item"> CSS </div>
-            <div class="skills__item"> HTML5 </div>
+            <div class="skills__item"> Nuxt.js </div>
           </div>
+
         </div>
         <div>
           <h4 class="skills__category--header"> backend</h4>
@@ -154,27 +153,10 @@
 
         <div class="portfolio__content" >
           <div class="portfolio__content--details">
-            <img src="food.png">
-            <h3> 950 meals</h3>
-            <div>
-              950meals is a food delivery service. Users pre-order breakfast and lunch meals which are then prepared by chefs and delivered by a logistics company.
-            </div>
-            <div class="portfolio__actions">
-              <div>
-                <a href="https://950meals.com" target="_blank" > 
-                  <img src="web.png">
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="portfolio__content" >
-          <div class="portfolio__content--details">
             <img src="pep.png">
             <h3> PEP Exams </h3>
             <div>
-              A progressive web app used by Pharmacists preparing for the licensing examination in Nigeria. It contains past questions, answers and downloadable study resources
+              A progressive web app used by Pharmacists preparing for the licensing examination in Nigeria.
             </div>
             <div class="portfolio__actions">
               <div>
@@ -187,21 +169,16 @@
         </div>
 
         <div class="portfolio__content" >
-          <div class="portfolio__content--details" >
-            <img src="ecommerce.png">
-            <h3> BuyHub </h3>
+          <div class="portfolio__content--details">
+            <img src="rootlo.jpeg" style="height: 50px">
+            <h3> Rootlo </h3>
             <div>
-              BuyHub is an ecommerce web application built with Vue.js and Node.js
+              A social networking app for remote workers and remote teams.
             </div>
             <div class="portfolio__actions">
               <div>
-                <a href="https://buyhub.herokuapp.com" target="_blank" > 
+                <a href="https://rootlo.web.app/" target="_blank" > 
                   <img src="web.png">
-                </a>
-              </div>
-              <div>
-                <a href="https://github.com/timothyokooboh/E-commerce" target="_blank" > 
-                  <img src="github.png" style="height:20px">
                 </a>
               </div>
             </div>
@@ -681,7 +658,7 @@
 
       & > div {
         width: 20rem;
-        min-height: 25rem;
+        min-height: 20rem;
         @include boxShadow;
         background: $color-white;
         border-radius: 4px;
@@ -698,9 +675,13 @@
 
     &__content {
       position: relative;
-      padding: 5rem 0;
+      padding: 2rem 0;
       text-align: center;
       line-height: 25px;
+
+  @media all and (max-width: 21.9em) {
+    padding: 4rem 0;
+  }
 
      &--details {
       position: absolute;
