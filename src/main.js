@@ -5,6 +5,21 @@ import store from './store'
 
 Vue.config.productionTip = false
 
+const myPlugin = {
+  install(Vue, options) {
+    Vue.mixin({
+      created() {
+        const { greeting } = options;
+        console.log(greeting)
+      }
+    }),
+
+    Vue.prototype.$validateEmail = email => /.+@.+\..+/.test(email);
+  }
+}
+
+Vue.use(myPlugin, {greeting: "good morning sir"})
+
 new Vue({
   router,
   store,

@@ -16,6 +16,7 @@
             <li>  <a href="#services"> services </a> </li>
             <li>  <a href="#skills"> skills </a> </li>
             <li>  <a href="#portfolio"> portfolio </a> </li>
+            <li>  <a href="#articles"> articles </a> </li>
             <li>  <a href="#contact"> contact </a> </li>
           </ul>
         </div>
@@ -28,6 +29,7 @@
               <div> <a href="#services"> services </a> </div>
               <div> <a href="#skills"> skills </a>  </div>
               <div> <a href="#portfolio"> portfolio </a> </div>
+              <div> <a href="#articles"> articles </a> </div>
               <div> <a href="#contact"> contact </a>  </div>
             </div>
           </div>
@@ -229,7 +231,70 @@
           </div>
         </div>
 
+        <div class="portfolio__content" >
+          <div class="portfolio__content--details">
+            <div style="display: flex; justify-content: center">
+                <div>
+                  <img src="vueschool.svg">
+                </div>
+            </div>
+            <h3> Vue School Clone </h3>
+            <div>
+              A clone of Vue School landing page
+            </div>
+            <div class="portfolio__actions">
+              <div>
+                <a href="https://timothyokooboh.github.io/vue-school-clone/" target="_blank" > 
+                  <img src="web.png">
+                </a>
+              </div>
+              <div>
+                <a href="https://github.com/timothyokooboh/vueschool-clone" target="_blank" > 
+                  <img src="github.png" style="height:20px">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio__content" >
+          <div class="portfolio__content--details">
+            <img src="github.png" style="width: 5rem">
+            <h3> Trending Github Repos</h3>
+            <div>
+              A list of trending Github repositories for the last 30 days
+            </div>
+            <div class="portfolio__actions">
+              <div>
+                <a href="https://timothyokooboh.github.io/trending-github-repos/" target="_blank" > 
+                  <img src="web.png">
+                </a>
+              </div>
+              <div>
+                <a href="https://github.com/timothyokooboh/trending-repos" target="_blank" > 
+                  <img src="github.png" style="height:20px">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
+    </section>
+
+    <section class="articles" id="articles">
+      <h2>Articles I have written</h2>
+      <ul>
+        <li>
+          <a href="https://dev.to/timothyokooboh/5-css-properties-you-probably-did-not-know-about-164i" target="_blank">Five CSS Properties you probably did not know about</a>
+        </li>
+        <li>
+          <a href="https://dev.to/timothyokooboh/how-to-become-a-better-vue-js-developer-l13" target="_blank">How to become a better Vue.js developer</a>
+        </li>
+        <li>
+          <a href="https://dev.to/timothyokooboh/vuex-best-practices-45dd" target="_blank">Vuex best practices</a>
+        </li>
+      </ul>
     </section>
 
     <footer>
@@ -391,7 +456,7 @@
       letter-spacing: 1.08px;
 
       &--intro {
-        animation: slideIn 1s ease-out forwards;
+        animation: slideIn 500ms ease-out forwards;
       }
 
       & img {
@@ -399,7 +464,7 @@
         height: 250px;
         border-radius: 50%;
         background: #fff;
-        animation: moveIn 2s ease-out 1s forwards;
+        animation: moveIn 500ms ease-out 1s forwards;
         animation-fill-mode: backwards;
       }
 
@@ -638,7 +703,6 @@
   }
 
   .portfolio {
-    margin: 3rem 0;
     background: lighten(#D7D3D1, 10%);
     padding: 2rem 0;
     clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%);
@@ -1016,6 +1080,21 @@
   a {
     text-decoration: none;
     color: #3A3AD6;
+  }
+}
+
+.articles {
+  h2 {
+    padding-left: 1.5rem;
+  }
+
+  ul {
+    li {
+      padding: 1rem 0;
+      a {
+        text-decoration: none;
+      }
+    }
   }
 }
 </style>

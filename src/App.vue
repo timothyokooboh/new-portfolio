@@ -17,6 +17,12 @@ import Loader from "@/components/Loader.vue"
       }
     },
 
+    methods: {
+       click() {
+        console.log(this.$validateEmail("tim@gmailcom"))
+      },
+    },
+
     mounted() {
       setTimeout(() => {
         this.showLoader = false
