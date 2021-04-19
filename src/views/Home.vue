@@ -56,8 +56,8 @@
           <h4 class="skills__category--header">frontend</h4>
           <div>
             <div class="skills__item"> Vue.js </div>
-            <div class="skills__item"> SCSS </div>
             <div class="skills__item"> TailwindCSS</div>
+            <div class="skills__item"> SCSS </div>
             <div class="skills__item"> Vuetify </div>
             <div class="skills__item"> Quasar </div>
             <div class="skills__item"> NativescriptVue </div>
