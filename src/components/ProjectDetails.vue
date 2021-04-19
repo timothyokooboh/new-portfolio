@@ -46,6 +46,13 @@
                </base-text>
            </div>
        </div>
+
+        <base-link 
+            outlined
+            text="view project"
+            :project-url="project[0].projectUrl"
+            >
+        </base-link>
     </div>
 </template>
 
@@ -54,12 +61,14 @@ import { projectListDetails } from "../projectListDetails";
 import BaseImage from './BaseImage.vue';
 import BaseTitle from "./BaseTitle";
 import BaseText from "./BaseText"
+import BaseLink from "./BaseLink";
 
 export default {
     components: { 
         BaseImage,
         BaseTitle,
-        BaseText
+        BaseText,
+        BaseLink
     },
     data() {
         return {
@@ -88,7 +97,7 @@ export default {
         grid-template-columns: 1fr 1fr;
         column-gap: 4rem;
         row-gap: 4rem;
-        margin-top: 2rem;
+        margin: 2rem 0;
 
         @media all and (max-width: 48em ) {
             grid-template-columns: 1fr;
