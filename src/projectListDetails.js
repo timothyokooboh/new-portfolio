@@ -24,7 +24,7 @@ export const projectListDetails = [
             I learned how to extend my knowledge of Vue.js to 
             build server side rendered apps with Nuxt.js.
         `,
-        images: ["/pep1.png", "/pep2.png", "/pep3.png"],
+        images: ["pep1.png", "pep2.png", "pep3.png"],
         projectUrl: "https://pepexam.herokuapp.com/",
     },
 
@@ -59,7 +59,7 @@ export const projectListDetails = [
             users could manipulate data in web storage and checkout to pay less the amount they are supposed 
             to pay.
         `,
-        images: ["/myfastmeds-1.png", "/myfastmeds-2.png", "/myfastmeds-3.png"],
+        images: ["myfastmeds-1.png", "myfastmeds-2.png", "myfastmeds-3.png"],
         projectUrl: "https://myfastmeds.herokuapp.com/",
     },
 
@@ -85,7 +85,7 @@ export const projectListDetails = [
             I applied Vue's reactivity system to dynamically update the bar charts each time
             new data was rendered to the client
         `,
-        images: ["/covid-1.png", "/covid-2.png", "/covid-3.png"],
+        images: ["covid-1.png", "covid-2.png", "covid-3.png"],
         projectUrl: "https://timothyokooboh.github.io/#/",
     },
 
@@ -110,7 +110,7 @@ export const projectListDetails = [
             I learned how to use the native web's speech synthesis API to
             include "text to speech" functionality in my web applications,
         `,
-        images: ["/dictionary-1.png", "/dictionary-2.png", "/dictionary-3.png"],
+        images: ["dictionary-1.png", "dictionary-2.png", "dictionary-3.png"],
         projectUrl: "https://timothyokooboh.github.io/dictionary/#/",
     }
 ]
