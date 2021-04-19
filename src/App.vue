@@ -1,15 +1,19 @@
 <template>
   <div id="app">
     <Loader v-if="showLoader === true" />
+    <header-nav v-if="showLoader === false"></header-nav>
     <router-view v-if="showLoader === false" />
   </div>
 </template>
 
 <script>
-import Loader from "@/components/Loader.vue"
+import Loader from "@/components/Loader.vue";
+import HeaderNav from "@/components/HeaderNav.vue";
+
   export default {
     components: {
-      Loader
+      Loader,
+      HeaderNav,
     },
     data() {
       return {
@@ -32,12 +36,14 @@ import Loader from "@/components/Loader.vue"
 </script>
 
 <style lang="scss">
+
   html {
     scroll-behavior: smooth;
+    
   }
 
   #app {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
 
   body {
@@ -45,6 +51,7 @@ import Loader from "@/components/Loader.vue"
     overflow-y: scroll;
     margin: 0;
     padding: 0;
+    color: #333
   }
 
   body::-webkit-scrollbar {

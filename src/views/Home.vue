@@ -3,37 +3,9 @@
     <div class="back-to-top" title="Back To Top">
      <a href="#home"> &#x2191; </a>
     </div>
-    <header>
+    <header id="home">
       <div class="header">
-        <div class="hamburger" @click="open">
-          <input type="checkbox" id="check">
-          <label for="check" > 
-            <span class="hamburger__menu" ></span>
-          </label>
-          <ul class="hamburger__menu--nav-items" id="x" @click="close">
-            <li>  <a href="#home" > home </a> </li>
-            <li>  <a href="#about"> about me </a> </li>
-            <li>  <a href="#services"> services </a> </li>
-            <li>  <a href="#skills"> skills </a> </li>
-            <li>  <a href="#portfolio"> portfolio </a> </li>
-            <li>  <a href="#articles"> articles </a> </li>
-            <li>  <a href="#contact"> contact </a> </li>
-          </ul>
-        </div>
-        <nav>
-          <div class="header__nav">
-            <div id="home">timothy okooboh</div>
-            <div class="header__nav--list">
-              <div> <a href="#home" > home </a> </div>
-              <div> <a href="#about"> about me </a>  </div>
-              <div> <a href="#services"> services </a> </div>
-              <div> <a href="#skills"> skills </a>  </div>
-              <div> <a href="#portfolio"> portfolio </a> </div>
-              <div> <a href="#articles"> articles </a> </div>
-              <div> <a href="#contact"> contact </a>  </div>
-            </div>
-          </div>
-        </nav>
+        <hamburger-menu></hamburger-menu>
         <div class="header__info">
 
           <div>
@@ -66,10 +38,9 @@
           </div>
           <div class="about__details--info">
             <h2> I am Timothy Okooboh </h2>
-            <div class="about__details--stack"> A Frontend Software Developer (Web & Mobile) with a keen interest in web app optimization and Vue.js development. </div>
+            <div class="about__details--stack"> A Frontend Software Developer with a keen interest in web app optimization and Vue.js development. </div>
             <div class="about__details--subtext"> I specialize on the research and development of reusable and performant UI components while adhering to best practices. </div>
             <div class="about__details--subtext"> The sole aim of the softwares I create is to provide solutions to everyday problems. </div>
-            <div class="about__details--subtext"> PS: I'm also a Pharmacist. </div>
             <div class="about__details--action"> 
               <div> <a href="cv.pdf" download > Download CV </a> </div> 
               <div> <a href="#contact"> Hire Me </a> </div>
@@ -78,49 +49,15 @@
         </div>
     </section>
 
-    <section class="services" id="services" >
-      <div class="services__details">
-        <div class="services__details--info" id="services__text">
-          <h2> my awesome <span style="color: #2806D2;" > services </span> </h2>
-          <div class="services__details--subinfo">
-            I work either on the frontend or backend to create single page applications (SPAs), progressive web apps (PWAs), and universal applications.
-          </div>
-        </div>
-        <div class="services__cards" id="services__cards">
-          <div class="services__cards--spa"> 
-            <div class="services__cards--content">    
-              <div> <img src="spa.png"> </div>
-              <h2> SPAs </h2>
-              <div class="services__cards--info" > I create single page apps that are performant and scalable </div>
-            </div>
-          </div>
-          <div class="services__cards--pwa"> 
-            <div class="services__cards--content" >
-              <div> <img src="pwa.png"> </div>
-              <h2> PWAs </h2>
-              <div class="services__cards--info" > I create progressive web apps that are performant and scalable </div>
-            </div>
-          </div>
-          <div class="services__cards--univ">
-            <div class="services__cards--content">
-              <div> <img src="univ.png"> </div>
-              <h2> universal Apps </h2>
-              <div class="services__cards--info"  > I create universal web apps with Nuxt.js </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-    </section>
-
     <section class="skills" id="skills" >
-      <h2 class="skills__heading"> my <span style="color: #2806D2;" > skills </span> </h2>
+      <h3 class="skills__heading"> my <span style="color: #2806D2;" > skills </span> </h3>
       <div class="skills__category">
         <div>
           <h4 class="skills__category--header">frontend</h4>
           <div>
             <div class="skills__item"> Vue.js </div>
             <div class="skills__item"> Vuetify </div>
+            <div class="skills__item"> Quasar </div>
             <div class="skills__item"> NativescriptVue </div>
             <div class="skills__item"> SCSS </div>
             <div class="skills__item"> Nuxt.js </div>
@@ -148,142 +85,13 @@
       </div>
     </section>
 
-    <section class="portfolio" id="portfolio" >
-      <h2 class="portfolio__heading"> My latest <span style="color: #2806D2;" > projects </span> </h2>
-
-      <div class="portfolio__cards">
-
-        <div class="portfolio__content" >
-          <div class="portfolio__content--details">
-            <img src="pep.png">
-            <h3> PEP Exams </h3>
-            <div>
-              A progressive web app used by Pharmacists preparing for the licensing examination in Nigeria.
-            </div>
-            <div class="portfolio__actions">
-              <div>
-                <a href="https://pepexam.herokuapp.com" target="_blank" > 
-                  <img src="web.png">
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="portfolio__content" >
-          <div class="portfolio__content--details">
-            <img src="rootlo.jpeg" style="height: 50px">
-            <h3> Rootlo </h3>
-            <div>
-              A social networking app for remote workers and remote teams.
-            </div>
-            <div class="portfolio__actions">
-              <div>
-                <a href="https://rootlo.web.app/" target="_blank" > 
-                  <img src="web.png">
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="portfolio__content" >
-          <div class="portfolio__content--details">
-            <img src="virus.png">
-            <h3> Covid19 Dashboard</h3>
-            <div>
-              Covid19 dashboard contains statistics of the coronavirus pandemic in various countries.
-            </div>
-            <div class="portfolio__actions">
-              <div>
-                <a href="https://timothyokooboh.github.io" target="_blank" > 
-                  <img src="web.png">
-                </a>
-              </div>
-              <div>
-                <a href="https://github.com/timothyokooboh/covid19-dev" target="_blank" > 
-                  <img src="github.png" style="height:20px">
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="portfolio__content" >
-          <div class="portfolio__content--details">
-            <img src="book.png">
-            <h3> Dictionary </h3>
-            <div>
-              Dictonary is a progressive web app that utilizes the owlbot-js NPM package to display the meaning of English words.
-            </div>
-            <div class="portfolio__actions">
-              <div>
-                <a href="https://timothyokooboh.github.io/dictionary" target="_blank" > 
-                  <img src="web.png">
-                </a>
-              </div>
-              <div>
-                <a href="https://github.com/timothyokooboh/dictionary-dev-2" target="_blank" > 
-                  <img src="github.png" style="height:20px">
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="portfolio__content" >
-          <div class="portfolio__content--details">
-            <div style="display: flex; justify-content: center">
-                <div>
-                  <img src="vueschool.svg">
-                </div>
-            </div>
-            <h3> Vue School Clone </h3>
-            <div>
-              A clone of Vue School landing page
-            </div>
-            <div class="portfolio__actions">
-              <div>
-                <a href="https://timothyokooboh.github.io/vue-school-clone/" target="_blank" > 
-                  <img src="web.png">
-                </a>
-              </div>
-              <div>
-                <a href="https://github.com/timothyokooboh/vueschool-clone" target="_blank" > 
-                  <img src="github.png" style="height:20px">
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="portfolio__content" >
-          <div class="portfolio__content--details">
-            <img src="github.png" style="width: 5rem">
-            <h3> Trending Github Repos</h3>
-            <div>
-              A list of trending Github repositories for the last 30 days
-            </div>
-            <div class="portfolio__actions">
-              <div>
-                <a href="https://timothyokooboh.github.io/trending-github-repos/" target="_blank" > 
-                  <img src="web.png">
-                </a>
-              </div>
-              <div>
-                <a href="https://github.com/timothyokooboh/trending-repos" target="_blank" > 
-                  <img src="github.png" style="height:20px">
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
+    <section id="projects">
+      <project-list></project-list>
     </section>
+    
 
     <section class="articles" id="articles">
-      <h2>Articles I have written</h2>
+      <h3>Articles I have written</h3>
       <ul>
         <li>
           <a href="https://dev.to/timothyokooboh/5-css-properties-you-probably-did-not-know-about-164i" target="_blank">Five CSS Properties you probably did not know about</a>
@@ -337,10 +145,16 @@
 </template>
 
 <script>
-  export default {
-   
-    mounted() {
-      const about = document.querySelector("#about")
+import ProjectList from "../components/ProjectList";
+import HamburgerMenu from "../components/HamburgerMenu"
+
+export default {
+  components: {
+    ProjectList,
+    HamburgerMenu
+  },
+  mounted() {
+    const about = document.querySelector("#about")
       let observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
           if(entry.isIntersecting) {
@@ -350,34 +164,12 @@
       })
 
       observer.observe(about)
-
-      const servicesText = document.querySelector("#services__text")
-      let observeServices = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if(entry.isIntersecting) {
-            entry.target.style.animation = "moveFromRight 2s ease-out forwards"
-          }
-        })
-      })
-
-      observeServices.observe(servicesText);
-
-      const servicesCards = document.querySelector("#services__cards")
-      let observeServicesCards = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if(entry.isIntersecting) {
-            entry.target.style.animation = "moveFromBottom 2s ease-out forwards"
-          }
-        })
-      })
-
-      observeServicesCards.observe(servicesCards)
       
     }
   }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 
   // variables
   $color-white-light: #f7f7f7;
@@ -588,90 +380,12 @@
     }
   }
 
-  .services {
-    margin: 3rem 0;
-    padding: 0 5rem;
-    position: relative;
-
-    &__details {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-
-      & > div {
-        margin-right: 2rem;
-      }
-
-      h2 {
-        text-transform: capitalize;
-      }
-
-      &--info {
-        max-width: 30rem;
-      }
-      &--subinfo {
-        color: $color-grey;
-        line-height: 25px;
-      }
-    }
-
-    &__cards {
-      position: relative;
-
-      & > div {
-        width: 15rem;
-        height: 15rem;
-        background: $color-white;
-        @include boxShadow;
-        position: absolute;
-        top: 0;
-        right: 0;
-        padding: 1rem 0;
-        border-radius: 4px;
-        outline-offset: 10px;
-
-        transition: all .2s;
-      }
-
-      & > div:hover {
-        z-index: 1000;
-        outline: 10px $color-primary solid;
-      }
-
-      &--spa {
-        transform: translateX(-100px)
-      }
-      &--pwa {
-        transform: translate(-200px, 100px);
-      }
-      &--univ {
-        transform: translate(10px, 140px)
-      }
-
-      &--content {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-      }
-
-      &--info {
-        color: $color-grey;
-        font-size: .8rem;
-        line-height: 25px;
-      }
-
-    }
-  }
-
   .skills {
-    margin-top: 25rem;
+    margin-top: 5rem;
+    padding: 2rem 3rem;
 
     &__heading {
-      text-align: center;
       text-transform: capitalize;
-      padding-bottom: 2rem;
     }
 
     &__item {
@@ -682,7 +396,7 @@
     &__category {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-around;
+      justify-content: space-between;
 
       &--header {
         text-transform: capitalize;
@@ -805,120 +519,7 @@
     border: 4px solid #5482E7;
   }
 
-  .hamburger {
-
-    label {
-      position: fixed;
-      top: 30px;
-      right: 30px;
-      z-index: 1000;
-      background-color: $color-white;
-      height: 50px;
-      width: 50px;
-      border-radius: 50%;
-      justify-content: center;
-      align-items: center;
-      cursor: pointer;
-      @include boxShadow;
-      display: none;
-    }
-
-    input[type="checkbox"] {
-      display: none
-    }
-
-    input[type="checkbox"]:checked + label &__menu::before {
-      transform: rotate(45deg);
-    }
-
-    input[type="checkbox"]:checked + label &__menu::after {
-      transform: rotate(-45deg);
-    }
-
-    input[type="checkbox"]:checked + label &__menu {
-      background-color: transparent;
-    }
-
-    input[type="checkbox"]:checked ~ .hamburger__menu--nav-items {
-      animation: moveIn .5s ease-out forwards;
-    }
-
-
-    &__menu {
-      width: 30px;
-      height: 3px;
-      background-color: $color-grey;
-      display: inline-block;
-      position: relative;
-      cursor: pointer;
-      transition: all .4s;
-
-      &::before {
-        content: "";
-        display: inline-block;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-color: $color-grey;
-        transform: translateY(-8px);
-        cursor: pointer;
-        transition: all .4s;
-      }
-
-      &::after {
-        content: "";
-        display: inline-block;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-color: $color-grey;
-        transform: translateY(8px);
-        cursor: pointer;
-        transition: all .4s;
-      }
-
-    }
-
-     
-      ul {
-        list-style: none;
-        background: $color-white;
-        outline: 5px solid $color-primary;
-        outline-offset: 5px;
-        padding: 2rem 3rem;
-        position: fixed;
-        top: 100px;
-        right: 20px;
-        opacity: 0;
-        border-radius: 4px;
-        z-index: 100;
-        @include boxShadow;
-        transition: all 20s;
-
-        li {
-          padding: .5rem;
-          color: $color-grey;
-          text-transform: capitalize;
-          letter-spacing: 1.08px;
-
-          &:hover {
-              transform: rotate(5deg) scale(1.2);
-            }
-
-          a {
-            text-decoration: none;
-            color: $color-grey;
-            transition: all .1s;
-
-            &:hover {
-              color: $color-primary !important;
-            }
-          }
-        }
-        
-      }
-  }
-
+  
   @keyframes moveIn {
     from {
       transform: translateX(-100px) scale(.3);
@@ -954,13 +555,9 @@
       }
       
     }
-
-    .skills {
-      margin-top: 32rem;
-    }
   }
 
-  @media all and (max-width: 828px) {
+  @media all and (max-width: 51.7) {
    .hamburger label {
      display: flex;
      outline: none;
@@ -1084,9 +681,7 @@
 }
 
 .articles {
-  h2 {
-    padding-left: 1.5rem;
-  }
+  padding: 0 3rem;
 
   ul {
     li {
